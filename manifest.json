@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+
+	"name": "Dialectic Diabetes",
+	"version": "0.1.0",
+	"description": "Turns every mention of dialectics on any website into 'diabetes'",
+	"icons": {
+		"16": "images/diabetes16.png",
+		"48": "images/diabetes48.png",
+		"128": "images/diabetes128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [ "*://*/*" ],
+			"js": [ "content.js" ],
+			"run_at": "document_end"
+
+		}
+	]
+
+}
